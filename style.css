@@ -1,3 +1,13 @@
 body {
 	padding-top: 40px;
 }
+
+aside {
+	position: fixed;
+	width: 170px;
+}
+
+.link-heading {
+	padding-top: 40px;
+}
+

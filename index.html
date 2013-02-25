@@ -4,11 +4,11 @@
 	<head lang="en">
 		<meta charset="utf-8">
 		<title>Custom Plunker</title>
-		<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target="#side-bar">
 
 		<nav>
 			<div class="navbar navbar-fixed-top">
@@ -24,20 +24,27 @@
 			</div>
 		</nav>
 
-		<header>
-			<div class="container">
-				<h1>NFC Proposal</h1>
-			</div>
-		</header>
-
 		<div class="container">
 			<div class="row">
+
 				<div class="span2">
-					<h2>Side bar</h2>
-					<p>side bar</p>
+					<aside id="side-bar">
+						<ul id="side" class="nav nav-pills nav-stacked">
+							<li><a href="#introduction">Introduction</a></li>
+							<li><a href="#next">Next</a></li>
+						</ul>
+					</aside>
 				</div>
-				<div class="span6">
-					<h2>Introduction</h2>
+
+				<div class="span4">
+
+					<header>
+						<div class="container">
+							<h1>NFC Proposal</h1>
+						</div>
+					</header>
+
+					<h2 class="link-heading" id="introduction">Introduction</h2>
 						<p>The purpose of this proposal is to explain what would be involved in using
 						NFC chips to log attendance of BVN seminars. Topics to be covered are:</p>
 						<ul>
@@ -54,9 +61,11 @@
 							<li>UX,</li>
 							<li>and an argument for this approach.</li>
 						</ul>
-					<hr>
-					<h2>Main Content</h2>
+
+					<h2 class="link-heading" id="next">Next</h2>
 					<p>main contenkjnerkjgnwet</p>
+
+					<hr>
 					<h2>Main Content</h2>
 					<h2>Main Content</h2>
 					<h2>Main Content</h2>
@@ -116,6 +125,9 @@
 				</div>
 			</div>
 		</div>
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
 	</body>
 
 </html>
