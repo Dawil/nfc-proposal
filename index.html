@@ -4,45 +4,31 @@
 	<head lang="en">
 		<meta charset="utf-8">
 		<title>Custom Plunker</title>
-		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+		<link href="vendor/css/bootstrap.css" rel="stylesheet">
+		<link href="vendor/css/bootstrap-responsive.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 	</head>
 
-	<body data-spy="scroll" data-target="#side-bar">
+	<body data-spy="scroll" data-offset="40">
 
-		<nav>
-			<div class="navbar navbar-fixed-top">
-				<div class="navbar-inner">
-					<div class="container">
-						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-						</ul>
-					</div>
+		<article class="container">
+
+			<header>
+				<div class="container">
+					<h1>NFC Proposal</h1>
 				</div>
-			</div>
-		</nav>
+			</header>
 
-		<div class="container">
 			<div class="row">
 
-				<div class="span2">
-					<aside id="side-bar">
-						<ul id="side" class="nav nav-pills nav-stacked">
-							<li><a href="#introduction">Introduction</a></li>
-							<li><a href="#next">Next</a></li>
-						</ul>
-					</aside>
-				</div>
+				<aside class="span3 sidebar">
+					<ul class="nav nav-pills nav-stacked" data-spy="affix">
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#next">Next</a></li>
+					</ul>
+				</aside>
 
 				<div class="span4">
-
-					<header>
-						<div class="container">
-							<h1>NFC Proposal</h1>
-						</div>
-					</header>
 
 					<h2 class="link-heading" id="introduction">Introduction</h2>
 						<p>The purpose of this proposal is to explain what would be involved in using
@@ -124,10 +110,12 @@
 					<p>main contenkjnerkjgnwet</p>
 				</div>
 			</div>
-		</div>
 
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+		<script src="vendor/js/jquery-1.9.1.min.js"></script>
+		<script src="vendor/js/bootstrap.js"></script>
+		<script src="script.js"></script>
+
+		</article>
 	</body>
 
 </html>
