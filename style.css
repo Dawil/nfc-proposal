@@ -4,6 +4,17 @@
 		width: auto;
 		top: 0;
 	}
+	 .fixed-sidebar {
+		 position:relative;
+		 width:auto;
+		 top: 0;
+	 }
+}
+
+@media (min-width: 768px) {
+	.fixed-sidebar {
+		position: fixed;
+	}
 }
 
 ad {
