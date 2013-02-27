@@ -6,13 +6,17 @@ $(function(){
 	 *
 	 * Allows simple client side includes.
 	 **/
-	var INCLUDE_TAG = 'data-include';
-	$( ['[',INCLUDE_TAG,']'].join('') )
-		.each( function() {
-			var tag = this;
-			$.ajax( this.attributes[INCLUDE_TAG].value)
-				.done( function( html ) {
-					$( tag ).html( html )
-				});
+	var ATTRIBUTE = 'data-include';
+	$( '[' + ATTRIBUTE + ']' ).map( function() {
+		var tag = this,
+				deferred = $.Deferred();
+		$.ajax({
+			url: this.attributes[ATTRIBUTE].value,
+		  success: function( result ) {
+				$( tag ).html( result );
+				deferred.resolve( tag );
+			}
 		});
+		return deferred.promise();
+	});
 });
