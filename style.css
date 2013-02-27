@@ -1,10 +1,5 @@
 @media (max-width: 767px) {
-	.affix {
-		position: static;
-		width: auto;
-		top: 0;
-	}
-	 .fixed-sidebar {
+	 .desktop-fixed {
 		 position:relative;
 		 width:auto;
 		 top: 0;
@@ -12,11 +7,7 @@
 }
 
 @media (min-width: 768px) {
-	.fixed-sidebar {
+	.desktop-fixed {
 		position: fixed;
 	}
-}
-
-ad {
-	display: inline;
 }
